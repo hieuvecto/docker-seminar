@@ -1,0 +1,18 @@
+version: '3.1'
+
+services:
+  php-fpm:
+    build: ./php-fpm
+    container_name: php-fpm
+    restart: always
+  nginx:
+    build: ./nginx
+    container_name: nginx
+    restart: always
+    ports:
+      - "80:80"
+    volumes:
+      - ./nginx/conf.d:/etc/nginx/conf.d
+    links:
+      - php-fpm
+  
