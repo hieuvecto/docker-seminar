@@ -1,5 +1,7 @@
 FROM besthappy/phpfpm
 
-COPY ./code /code
+RUN mkdir /code
 
-RUN chmod 777 /code/*
+RUN chown -R root:root /code
+
+# RUN chmod 777 /code/*

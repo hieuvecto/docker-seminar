@@ -31,6 +31,7 @@ Vagrant.configure(2) do |config|
 
       if server_config['hostname'] === 'app' then
         server.vm.synced_folder './app', '/home/vagrant/app', owner: "vagrant", group: "vagrant", create: true, mount_options: ["dmode=770,fmode=770"]
+        server.vm.synced_folder './app/code', '/usr/share/code', owner: "root", group: "root", create: true, mount_options: ["dmode=775,fmode=777"]
       end
       
       if server_config['hostname'] === 'database' then
