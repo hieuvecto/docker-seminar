@@ -9,6 +9,7 @@ services:
       - "9000:9000"
     volumes:
       - /usr/share/code:/code
+      - /usr/share/log:/log
   nginx:
     build: ./nginx
     container_name: nginx
