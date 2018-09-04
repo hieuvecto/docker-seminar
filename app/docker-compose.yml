@@ -5,11 +5,11 @@ services:
     build: ./php-fpm
     container_name: php-fpm
     restart: always
-    ports:
-      - "9000:9000"
     volumes:
       - /usr/share/code:/code
       - /usr/share/log:/log
+      - /usr/share/config/php-fpm.conf:/usr/local/etc/php-fpm.conf
+      - /usr/share/config/www.conf:/usr/local/etc/php-fpm.d/www.conf
   nginx:
     build: ./nginx
     container_name: nginx
