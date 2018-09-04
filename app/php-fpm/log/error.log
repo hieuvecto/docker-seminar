@@ -1,0 +1,2 @@
+[04-Sep-2018 09:28:28 UTC] PHP Parse error:  syntax error, unexpected '$conn' (T_VARIABLE) in /code/index.php on line 7
+[04-Sep-2018 10:20:26 UTC] PHP Parse error:  syntax error, unexpected '$conn' (T_VARIABLE) in /code/index.php on line 7
