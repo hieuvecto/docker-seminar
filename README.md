@@ -1,3 +1,8 @@
+# Yêu cầu
+1. VirtualBox
+- Link cài đặt: https://www.virtualbox.org/wiki/Downloads
+2. Vagrant
+- Link cài đặt: https://www.vagrantup.com/downloads.html
 # Hướng dẫn sử dụng
 
 1. Tạo các máy ảo vagrant
